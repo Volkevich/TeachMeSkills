@@ -12,7 +12,7 @@ public class Task1 {
      */
     public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Введите целое число: ");
+            System.out.println("Введите целое трехзначное число: ");
             int num = scanner.nextInt();
             if (isPrime(num) ) {
                 String result = new StringBuilder(String.valueOf(num)).reverse().toString();
