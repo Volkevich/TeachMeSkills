@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Task1 {
     public static void main(String[] args) {
 
-        int[] arrays = {1,2,3,4,5,6,7,7,8,9,11,33};
+        int[] arrays = {1, 2, 3, 4, 54, 5, 6, 67, 7};
         minAndMaxArray(arrays);
     }
 
@@ -25,7 +25,7 @@ public class Task1 {
         array[maxIndex] = array[minIndex];
         array[minIndex] = temp;
 
-        System.out.println("Исходный массив: " + Arrays.toString(new int[]{1,2,3,4,5,6,7,7,8,9,11,33}));
+        System.out.println("Исходный массив: " + Arrays.toString(new int[]{1, 2, 3, 4, 54, 5, 6, 67, 7}));
         System.out.println("Измененный массив: " + Arrays.toString(array));
     }
 
