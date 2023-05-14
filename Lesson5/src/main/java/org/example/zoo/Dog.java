@@ -2,10 +2,9 @@ package org.example.zoo;
 
 public class Dog extends Animals implements Command {
 
+
     @Override
     public void jump() {
-        System.out.println(getName() + " делает");
-        Command.super.jump();
 
     }
 

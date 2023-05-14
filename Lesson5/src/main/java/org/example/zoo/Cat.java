@@ -1,6 +1,6 @@
 package org.example.zoo;
 
-public class Cat extends Animals implements Command {
+public class Cat implements Command {
 
 
     private final String name;
@@ -8,17 +8,8 @@ public class Cat extends Animals implements Command {
         this.name = name;
     }
 
-    @Override
-    public void jump() {
-        System.out.println(getName() + " делает: ");
-        Command.super.jump();
-    }
-
-    @Override
-    public void voice() {
-        System.out.println("Мяу-Мяу");
-    }
     public String getName() {
         return name;
     }
+
 }
