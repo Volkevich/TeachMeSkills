@@ -16,14 +16,14 @@ public class Task2 {
      * PS: Дополнительные примеры работы функции можно посмотреть в соответствующих тестах.
      */
     public static void main(String[] args) {
-        System.out.println(formatPhoneNumber("+7 (921) 123-45-67"));
+        System.out.println(formatPhoneNumber("12 --  34- 5 -- 67 -89"));
     }
     public static String formatPhoneNumber(String phoneNumber) {
         String regex = "(\\+\\d{1,2})?\\s*(\\(?\\d{3}\\)?[\\s.-]*){1,2}\\d{2,3}[\\s.-]*\\d{2}[\\s.-]*\\d{2}";
         if (!phoneNumber.matches(regex)) {
             return "";
         }
-        String digits = phoneNumber.replaceAll("[^\\d]", "");
+        String digits = phoneNumber.replaceAll("[^\\D]", "");
         if (digits.length() == 10) {
             digits = "7" + digits;
         }
