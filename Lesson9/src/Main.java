@@ -1,21 +1,26 @@
-import java.util.LinkedList;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Printer printer = new Printer();
-        printer.<String>print(new String[]{"1","2","3"});
+        HashMap<Long,String> phoneMobile = new HashMap<>();
+        phoneMobile.put(12313213132132L,"Иван");
+        phoneMobile.put(3754459949L,"Олег");
+        phoneMobile.put(37544599969L,"Сергей");
+        phoneMobile.put(37549979L,"Ваня");
 
-    }
-}
-
-class Printer{
-
-    public <T> void print(T[] items){
-        for(T item: items){
-            System.out.println(item);
+        for (Map.Entry<Long,String> map:phoneMobile.entrySet()){
+            if (map.getValue().equals("Олег")){
+                System.out.println("Телефон Олега " + map.getKey());
+            }
         }
+
+
     }
 }
+
+
 
 
